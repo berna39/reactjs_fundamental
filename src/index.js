@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import BasicComponent from './components/BasicComponent';
 import ComponentWithProps from './components/ComponentWithProps';
 import ComponentStateValues from './components/ComponentStateValues';
+import LifeCycleComponent from './components/LifeCycleComponent';
+import EventComponent from './components/EventComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +16,8 @@ root.render(
     <ComponentWithProps firstProp="Snoweden"/>
     <ComponentWithProps firstProp="Joseph"/>
     <ComponentStateValues />
+    <LifeCycleComponent />
+    <EventComponent />
   </React.StrictMode>
 );
 
