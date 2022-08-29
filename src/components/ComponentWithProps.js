@@ -1,5 +1,6 @@
 import React from "react";
 
+// in this component i show how props can be sent to a child component
 class ComponentWithProps extends React.Component{
     constructor(props){
         super(props)

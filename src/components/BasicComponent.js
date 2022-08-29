@@ -1,5 +1,6 @@
 import React from "react";
 
+// This is a very basic react component
 class BasicComponent extends React.Component{
 
     constructor(props){

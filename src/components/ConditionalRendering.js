@@ -1,5 +1,6 @@
 import React from "react";
 
+// In this component i illustrate conditional rendering
 class ConditionalRendering extends React.Component{
     constructor(props){
         super(props);

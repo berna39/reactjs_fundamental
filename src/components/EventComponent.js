@@ -1,5 +1,6 @@
 import React from "react";
 
+// Very basic event reactive component
 class EventComponent extends React.Component{
     constructor(props){
         super(props);

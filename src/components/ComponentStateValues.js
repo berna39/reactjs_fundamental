@@ -1,5 +1,6 @@
 import React from "react";
 
+// In this component i show how state can be changed
 class ComponentStateValues extends React.Component{
     constructor(props){
         super(props);
