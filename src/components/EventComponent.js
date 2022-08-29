@@ -7,12 +7,17 @@ class EventComponent extends React.Component{
     }
 
     myMethod(){
-        alert('Event trigred');
+        alert('Event triggered');
+    }
+
+    myOtherMethod(){
+        alert('Other Event triggered');
     }
 
     render(){
         return(<div>
-                    <button onClick={this.myMethod}>Trigger</button>
+                    <button onClick={this.myMethod}>Click on me</button>
+                    <button onClick={() => this.myOtherMethod()}>Or me</button>
                 </div>);
     }
 }

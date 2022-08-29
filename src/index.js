@@ -8,6 +8,7 @@ import ComponentWithProps from './components/ComponentWithProps';
 import ComponentStateValues from './components/ComponentStateValues';
 import LifeCycleComponent from './components/LifeCycleComponent';
 import EventComponent from './components/EventComponent';
+import ConditionalRendering from './components/ConditionalRendering';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <ComponentStateValues />
     <LifeCycleComponent />
     <EventComponent />
+    <ConditionalRendering />
   </React.StrictMode>
 );
 
