@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicComponent from './components/BasicComponent';
+import ComponentWithProps from './components/ComponentWithProps';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BasicComponent />
+    <ComponentWithProps firstProp="Snoweden"/>
+    <ComponentWithProps firstProp="Joseph"/>
   </React.StrictMode>
 );
 
