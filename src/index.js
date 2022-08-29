@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicComponent from './components/BasicComponent';
 import ComponentWithProps from './components/ComponentWithProps';
+import ComponentStateValues from './components/ComponentStateValues';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <BasicComponent />
     <ComponentWithProps firstProp="Snoweden"/>
     <ComponentWithProps firstProp="Joseph"/>
+    <ComponentStateValues />
   </React.StrictMode>
 );
 
