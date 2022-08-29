@@ -1,5 +1,6 @@
 import React from "react";
 
+// Basic list component
 class ListComponent extends React.Component{
     constructor(props){
         super(props);

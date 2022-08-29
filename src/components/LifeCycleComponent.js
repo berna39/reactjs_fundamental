@@ -1,5 +1,6 @@
 import React from "react";
 
+// Basic illustration of component's lifecycle management
 class LifeCycleComponent extends React.Component{
     constructor(props){
         super(props);
