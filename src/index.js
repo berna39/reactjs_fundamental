@@ -9,6 +9,7 @@ import ComponentStateValues from './components/ComponentStateValues';
 import LifeCycleComponent from './components/LifeCycleComponent';
 import EventComponent from './components/EventComponent';
 import ConditionalRendering from './components/ConditionalRendering';
+import ListComponent from './components/ListComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
     <LifeCycleComponent />
     <EventComponent />
     <ConditionalRendering />
+    <ListComponent />
   </React.StrictMode>
 );
 
