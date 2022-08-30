@@ -14,6 +14,8 @@ import CompositionComponent from './components/CompositionComponent';
 import MoneyConverterComponent from './components/MoneyConverterComponent';
 import Form from './components/Form';
 
+const LazyLoadedComponent = React.lazy(() => import('./components/LazyLoadedComponent'));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -28,6 +30,7 @@ root.render(
     <Form />
     <MoneyConverterComponent />
     <CompositionComponent />
+    <LazyLoadedComponent />
   </React.StrictMode>
 );
 
