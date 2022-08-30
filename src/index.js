@@ -10,6 +10,7 @@ import LifeCycleComponent from './components/LifeCycleComponent';
 import EventComponent from './components/EventComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListComponent from './components/ListComponent';
+import CompositionComponent from './components/CompositionComponent';
 import MoneyConverterComponent from './components/MoneyConverterComponent';
 import Form from './components/Form';
 
@@ -26,6 +27,7 @@ root.render(
     <ListComponent />
     <Form />
     <MoneyConverterComponent />
+    <CompositionComponent />
   </React.StrictMode>
 );
 
