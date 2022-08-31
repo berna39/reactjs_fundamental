@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicComponent from './components/BasicComponent';
 import ComponentWithProps from './components/ComponentWithProps';
@@ -14,7 +13,7 @@ import CompositionComponent from './components/CompositionComponent';
 import MoneyConverterComponent from './components/MoneyConverterComponent';
 import Form from './components/Form';
 
-const LazyLoadedComponent = React.lazy(() => import('./components/LazyLoadedComponent'));
+const LazyLoadedComponent = lazy(() => import('./components/LazyLoadedComponent'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,9 +27,11 @@ root.render(
     <ConditionalRendering />
     <ListComponent />
     <Form />
-    <MoneyConverterComponent />
     <CompositionComponent />
-    <LazyLoadedComponent />
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyLoadedComponent />
+      <MoneyConverterComponent />
+    </Suspense>
   </React.StrictMode>
 );
 
